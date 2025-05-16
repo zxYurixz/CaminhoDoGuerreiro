@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;	
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    flex-wrap: nowrap;
+    h1{
+        font-size: 150%;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+    #btnMenu{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        padding: 0.8em;
+    }
+}
+
+#inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../assets/1345325.png);
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #4a2e7e;
+}
+
+
+@media (max-width: 768px){
+    #menu{
+        display: none;
+    }
+
+    #btnMenu{
+        display: block;
+        width:30px;
+    }
+}
